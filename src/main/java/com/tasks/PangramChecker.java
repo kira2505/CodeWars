@@ -1,12 +1,9 @@
-package tasks;
+package com.tasks;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PangramChecker {
-
-    public static void main(String[] args) {
-        System.out.println(check("The quick brown fox jumps over the lazy dog"));
-    }
 
     public static boolean check(String sentence){
         Set<Character> words = new HashSet<>();

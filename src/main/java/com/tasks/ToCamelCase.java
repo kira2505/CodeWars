@@ -1,11 +1,6 @@
-package tasks;
+package com.tasks;
 
 public class ToCamelCase {
-
-    public static void main(String[] args) {
-        System.out.println("the_Stealth_Warrior");
-        System.out.println(toCamelCase("the-stealth-warrior"));
-    }
 
     public static String toCamelCase(String s) {
         StringBuilder sb = new StringBuilder(s);

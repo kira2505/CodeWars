@@ -1,4 +1,4 @@
-package tasks;
+package com.tasks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,6 +27,5 @@ public class Hashmap {
         } );
 
         System.out.println(withPair);
-
     }
 }
