@@ -1,9 +1,6 @@
 package com.tasks;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Hashmap {
 
@@ -18,14 +15,16 @@ public class Hashmap {
 
         System.out.println(sorted);
 
-        List<String> withPair = new ArrayList<>();
+        Iterator<Map.Entry<String, Integer>> iterator = sorted.entrySet().iterator();
 
-        sorted.forEach((k, v ) -> {
-            if(v >=2) {
-                withPair.add(k);
+        while (iterator.hasNext()) {
+            Map.Entry<String, Integer> next = iterator.next();
+
+            if (next.getValue() % 2 != 0) {
+                iterator.remove();
             }
-        } );
+        }
 
-        System.out.println(withPair);
+        System.out.println(sorted);
     }
 }
